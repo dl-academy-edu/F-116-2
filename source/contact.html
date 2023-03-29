@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="google" content="notranslate" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <title>DL Academy</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <script>
+      var docElement = document.documentElement;
+      docElement.className =
+        docElement.className.replace(/\bno-js\b/, "") + " js";
+    </script>
+
+    <!-- Favicon -->
+
+    <!-- build:css -->
+    <link href="css/style.min.css" rel="stylesheet" />
+    <!-- endbuild -->
+  </head>
+  <body>
+    <header class="header container">
+      <ul class="header__list">
+        <li class="header__list-item">
+          <a class="header__list-link" href="/"
+            ><img src="../img/logo.png" alt="Logo" class="logo"
+          /></a>
+        </li>
+        <li class="header__list-item">
+          <a class="header__list-link" href="#">Catalog</a>
+        </li>
+        <li class="header__list-item">
+          <a class="header__list-link" href="#">Servises</a>
+        </li>
+        <li class="header__list-item">
+          <a class="header__list-link" href="#">Blog</a>
+        </li>
+        <li class="header__list-item">
+          <a class="header__list-link" href="#">About Us</a>
+        </li>
+      </ul>
+      <ul class="header__list-contact">
+        <li class="header__list-item">
+          <a class="header__list-link--phone" href="#">789-254-14</a>
+        </li>
+        <li class="header__list-item">
+          <a class="header__list-link--contact" href="#">Contact us</a>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <div class="container">
+        <h1 class="title">Contact Us</h1>
+        <form action="#" class="form">
+          <div class="form__inner-wr">
+            <div class="form__wrapper">
+              <div class="form__inner">
+                <label for="name" class="form__label">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  class="form__input"
+                  placeholder="Ivan Ivanov"
+                />
+              </div>
+              <div class="form__inner">
+                <label for="phone" class="form__label">Phone</label>
+                <input type="tel" id="phone" class="form__input" />
+              </div>
+            </div>
+            <div class="form__wrapper-email">
+              <label for="email" class="form__label">Email</label>
+              <input type="email" id="email" class="form__input-email" />
+            </div>
+            <fieldset class="form__payment">
+              <legend class="form__payment-legend form__label">
+                Payment Methods
+              </legend>
+              <ul class="form__payment-list">
+                <li class="form__payment-item">
+                  <input
+                    type="checkbox"
+                    id="Сash"
+                    class="form__payment-input"
+                  />
+                  <label for="Сash" class="form__label form__label-payment"
+                    >Сash</label
+                  >
+                </li>
+                <li class="form__payment-item">
+                  <input
+                    type="checkbox"
+                    id="Сredit"
+                    class="form__payment-input"
+                  />
+                  <label for="Сredit" class="form__label form__label-payment"
+                    >Сredit Сard</label
+                  >
+                </li>
+                <li class="form__payment-item">
+                  <input
+                    type="checkbox"
+                    id="Receipt"
+                    class="form__payment-input"
+                  />
+                  <label for="Receipt" class="form__label form__label-payment"
+                    >Receipt</label
+                  >
+                </li>
+              </ul>
+            </fieldset>
+            <div class="form__report">
+              <p class="form__label">
+                Do you need a report on the services provided?
+              </p>
+              <div class="form__report-wrapper">
+                <div class="form__inner-report">
+                  <input
+                    type="radio"
+                    id="yes"
+                    name="report"
+                    class="form__radio"
+                  />
+                  <label class="form__label-radio" for="yes">Yes</label>
+                </div>
+                <div class="form__inner-report">
+                  <input
+                    type="radio"
+                    id="no"
+                    name="report"
+                    class="form__radio"
+                  />
+                  <label class="form__label-radio" for="no">No</label>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="header__list-link--contact">
+              Send
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="js/app.js" defer></script>
+  </body>
+</html>
