@@ -28,9 +28,7 @@
       <section class="banner">
         <div class="container">
           <h1 class="banner__title">The world’s leading cleaning company</h1>
-          <button type="button" class="banner__btn" aria-label="Open popup">
-            Get a free Estimate
-          </button>
+          @@include('blocks/button.html')
         </div>
       </section>
       <section class="services container">
@@ -72,7 +70,9 @@
             and non-toxic for your family and pets.
           </li>
           <li class="about__list-item">
-            @@include('blocks/link.html')
+            @@include('blocks/link.html', {
+              'text': "Learn more",
+            })
           </li>
         </ul>
         <img
