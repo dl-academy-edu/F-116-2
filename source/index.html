@@ -24,6 +24,74 @@
   </head>
   <body>
     @@include('blocks/header.html')
+    <svg
+      class="smile"
+      width="80"
+      height="80"
+      viewBox="0 0 80 80"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M80 14.1178V63.8822C80 66.1564 78.1474 68 75.8621 68H31L12.3448 79.7556C11.8788 80.0574 11.2841 80.0814 10.7951 79.818C10.3061 79.5547 10.001 79.0462 10 78.4928V68H4.13793C1.85261 68 0 66.1564 0 63.8822V14.1178C0 11.8436 1.85261 10 4.13793 10H75.8621C78.1474 10 80 11.8436 80 14.1178Z"
+        fill="#2198F4"
+      />
+      <path
+        d="M40 58C56.0163 58 69 45.0163 69 29C69 12.9837 56.0163 0 40 0C23.9837 0 11 12.9837 11 29C11 45.0163 23.9837 58 40 58Z"
+        fill="#F0C419"
+      />
+      <path
+        d="M31.724 38.6206H39.9999H48.2758C49.0375 38.6206 49.6551 39.2381 49.6551 39.9999C49.6551 45.3323 45.3323 49.6551 39.9999 49.6551C34.6675 49.6551 30.3447 45.3323 30.3447 39.9999C30.3447 39.2381 30.9623 38.6206 31.724 38.6206Z"
+        fill="#802D40"
+      />
+      <path
+        d="M45.9722 47.5724C42.4748 50.3496 37.5247 50.3496 34.0273 47.5724C35.2649 45.4462 37.5396 44.1382 39.9998 44.1382C42.46 44.1382 44.7346 45.4462 45.9722 47.5724Z"
+        fill="#FF5364"
+      />
+      <path
+        d="M51 31C54.866 31 58 27.866 58 24C58 20.134 54.866 17 51 17C47.134 17 44 20.134 44 24C44 27.866 47.134 31 51 31Z"
+        fill="#ECF0F1"
+      />
+      <path
+        d="M49 27C50.6569 27 52 25.6569 52 24C52 22.3431 50.6569 21 49 21C47.3431 21 46 22.3431 46 24C46 25.6569 47.3431 27 49 27Z"
+        fill="#3F5C6C"
+      />
+      <path
+        d="M47.5 24C48.3284 24 49 23.3284 49 22.5C49 21.6716 48.3284 21 47.5 21C46.6716 21 46 21.6716 46 22.5C46 23.3284 46.6716 24 47.5 24Z"
+        fill="#ECF0F1"
+      />
+      <path
+        d="M29 31C32.866 31 36 27.866 36 24C36 20.134 32.866 17 29 17C25.134 17 22 20.134 22 24C22 27.866 25.134 31 29 31Z"
+        fill="#ECF0F1"
+      />
+      <path
+        d="M31 27C32.6569 27 34 25.6569 34 24C34 22.3431 32.6569 21 31 21C29.3431 21 28 22.3431 28 24C28 25.6569 29.3431 27 31 27Z"
+        fill="#3F5C6C"
+      />
+      <path
+        d="M29.5 24C30.3284 24 31 23.3284 31 22.5C31 21.6716 30.3284 21 29.5 21C28.6716 21 28 21.6716 28 22.5C28 23.3284 28.6716 24 29.5 24Z"
+        fill="#ECF0F1"
+      />
+      <path
+        d="M58.5805 16C58.3001 15.9996 58.0262 15.9152 57.7933 15.7575C53.9626 13.229 49.0172 13.229 45.1866 15.7575C44.5362 16.1814 43.6699 15.9997 43.2397 15.3491C42.8094 14.6985 42.9739 13.8191 43.6094 13.3725C48.3979 10.2092 54.582 10.2092 59.3705 13.3725C59.8897 13.7241 60.1203 14.378 59.9385 14.9826C59.7567 15.5873 59.2052 16.0005 58.5805 16Z"
+        fill="#F29C1F"
+      />
+      <path
+        class="smile__eyebrow"
+        d="M35.5805 16C35.3001 15.9996 35.0262 15.9152 34.7933 15.7575C30.9626 13.229 26.0172 13.229 22.1866 15.7575C21.5362 16.1814 20.6699 15.9997 20.2397 15.3491C19.8094 14.6985 19.9739 13.8191 20.6094 13.3725C25.3979 10.2092 31.582 10.2092 36.3705 13.3725C36.8897 13.7241 37.1203 14.378 36.9385 14.9826C36.7567 15.5873 36.2052 16.0005 35.5805 16Z"
+        fill="#F29C1F"
+      />
+      <line
+        x1="14.5"
+        y1="57.5"
+        x2="65.5"
+        y2="57.5"
+        stroke="#2A8CD9"
+        stroke-width="3"
+        stroke-linecap="round"
+      />
+    </svg>
+
     <div class="chat">
       <div class="chat__head">
         <p class="chat__title">ChemDry Chat</p>
@@ -32,16 +100,24 @@
       </div>
       <div class="chat__message">
         <div class="chat__message-content">
-          <p class="chat__message-right">Oh, you better not know, since we are learning a very complicated topic on how to create cool animations in CSS.</p>
+          <p class="chat__message-right">
+            Oh, you better not know, since we are learning a very complicated
+            topic on how to create cool animations in CSS.
+          </p>
         </div>
         <div class="chat__message-content">
           <p class="chat__message-left">Cool! Can you teach me too?</p>
         </div>
         <div class="chat__message-content">
-          <p class="chat__message-right">No, I won’t just teach you, come to us for courses at DL Academy and then you will not be taught this!</p>
+          <p class="chat__message-right">
+            No, I won’t just teach you, come to us for courses at DL Academy and
+            then you will not be taught this!
+          </p>
         </div>
         <div class="chat__message-content">
-          <p class="chat__message-left">Damn, I was hoping so, well, I’ll start walking soon, see you!</p>
+          <p class="chat__message-left">
+            Damn, I was hoping so, well, I’ll start walking soon, see you!
+          </p>
         </div>
         <div class="chat__message-content">
           <p class="chat__message-right">Good, all the best.</p>
@@ -56,32 +132,20 @@
         </div>
       </section>
       <section class="services container">
-        @@include('blocks/title.html', {
-          'title' : "our most popular servises",
-          'class' : "servises__title"
-        })
+        @@include('blocks/title.html', { 'title' : "our most popular servises",
+        'class' : "servises__title" })
         <ul class="servises__list">
-          @@include('blocks/category.html',{
-            'img':"./img/service.jpg"
-          })
-          @@include('blocks/category.html',{
-            'img':"./img/service-one.jpg"
-          })
-          @@include('blocks/category.html',{
-            'img':"./img/service-two.jpg"
-          })
-          @@include('blocks/category.html',{
-            'img':"./img/service-three.jpg"
-          })
+          @@include('blocks/category.html',{ 'img':"./img/service.jpg" })
+          @@include('blocks/category.html',{ 'img':"./img/service-one.jpg" })
+          @@include('blocks/category.html',{ 'img':"./img/service-two.jpg" })
+          @@include('blocks/category.html',{ 'img':"./img/service-three.jpg" })
         </ul>
       </section>
       <section class="about container">
         <ul class="about__list">
           <li class="about__list-item">
-            @@include('blocks/title.html', {
-              'title' : "Why Haley’s Chem-Dry?",
-              'class' : "about__list-title"
-            })
+            @@include('blocks/title.html', { 'title' : "Why Haley’s Chem-Dry?",
+            'class' : "about__list-title" })
           </li>
           <li class="about__list-item about__text">
             Chem-Dry’s mission is helping people live healthy lives, which
@@ -94,9 +158,7 @@
             and non-toxic for your family and pets.
           </li>
           <li class="about__list-item">
-            @@include('blocks/link.html', {
-              'text': "Learn more",
-            })
+            @@include('blocks/link.html', { 'text': "Learn more", })
           </li>
         </ul>
         <img
@@ -147,9 +209,7 @@
             <li class="maps__list-item">
               <a href="tel:7206059399">(720) 605-9399 </a>
             </li>
-            <li class="maps__list-item">
-              @@include('blocks/link.html')
-            </li>
+            <li class="maps__list-item">@@include('blocks/link.html')</li>
           </ul>
         </div>
         <iframe

@@ -42,6 +42,37 @@
   то он должен был бы быть в файле _blocks/coming-soon.scss
 */
 
+.svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+  &__circle {
+    opacity: 1;
+    animation: animsvg 2s forwards infinite;
+  }
+}
+
+.smile {
+  position: relative;
+  &__eyebrow {
+    transform: translateY(-2px);
+    animation: eye 0.5s infinite;
+  }
+}
+
+@keyframes eye {
+  0% {
+    transform: translateY(-2px);
+  }
+  50% {
+    transform: translateY(2px);
+  }
+  100% {
+    transform: translateY(-2px);
+  }
+}
+
 .chat {
   background: #FFFFFF;
   width: 300px;
@@ -108,6 +139,19 @@
       max-width: 177px;
       padding: 8px 10px 8px 10px;
     }
+  }
+}
+
+
+@keyframes animsvg {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
