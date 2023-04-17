@@ -24,7 +24,7 @@
   </head>
   <body>
     @@include('blocks/header.html')
-    <svg
+    <!-- <svg
       class="smile"
       width="80"
       height="80"
@@ -90,8 +90,8 @@
         stroke-width="3"
         stroke-linecap="round"
       />
-    </svg>
-
+    </svg> -->
+<!-- 
     <div class="chat">
       <div class="chat__head">
         <p class="chat__title">ChemDry Chat</p>
@@ -123,7 +123,7 @@
           <p class="chat__message-right">Good, all the best.</p>
         </div>
       </div>
-    </div>
+    </div> -->
     <main class="main">
       <section class="banner">
         <div class="container">
@@ -133,7 +133,7 @@
       </section>
       <section class="services container">
         @@include('blocks/title.html', { 'title' : "our most popular servises",
-        'class' : "servises__title" })
+        'class' : "services__title" })
         <ul class="servises__list">
           @@include('blocks/category.html',{ 'img':"./img/service.jpg" })
           @@include('blocks/category.html',{ 'img':"./img/service-one.jpg" })

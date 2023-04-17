@@ -42,128 +42,128 @@
   то он должен был бы быть в файле _blocks/coming-soon.scss
 */
 
-.svg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 100;
-  &__circle {
-    opacity: 1;
-    animation: animsvg 2s forwards infinite;
-  }
-}
+// .svg {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   z-index: 100;
+//   &__circle {
+//     opacity: 1;
+//     animation: animsvg 2s forwards infinite;
+//   }
+// }
 
-.smile {
-  position: relative;
-  &__eyebrow {
-    transform: translateY(-2px);
-    animation: eye 0.5s infinite;
-  }
-}
+// .smile {
+//   position: relative;
+//   &__eyebrow {
+//     transform: translateY(-2px);
+//     animation: eye 0.5s infinite;
+//   }
+// }
 
-@keyframes eye {
-  0% {
-    transform: translateY(-2px);
-  }
-  50% {
-    transform: translateY(2px);
-  }
-  100% {
-    transform: translateY(-2px);
-  }
-}
+// @keyframes eye {
+//   0% {
+//     transform: translateY(-2px);
+//   }
+//   50% {
+//     transform: translateY(2px);
+//   }
+//   100% {
+//     transform: translateY(-2px);
+//   }
+// }
 
-.chat {
-  background: #FFFFFF;
-  width: 300px;
-  height: 480px;
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.35);
-  position: fixed;
-  z-index: 50;
-  overflow: hidden;
-  &__head {
-    background: #F6F6F8;
-    padding: 15px;
-    border: #BCBCBE 1px solid;
-  }
-  &__title {
-    color: #27253F;
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 22px;
-  }
-  &__subtitle {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    color: #6B6A6A;
-  }
-  &__message {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 80%;
-    &-content {
-      max-height: 0;
-      animation: chat 5s forwards;
-      @for $i from 1 through 5 {
-        &:nth-child(#{$i}) {
-          animation-delay: $i + 1s;
-        }
-      }
-    }
-    &-right {
-      background: #2198F4;
-      font-family: 'Lato';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 17px;
-      color: #FFFFFF;
-      padding: 8px 10px 8px 10px;
-      margin: 0 15px 15px auto;
-      max-width: 180px;
-    }
-    &-left {
-      background: #E4E3E8;
-      font-family: 'Lato';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 17px;
-      color: #27253F;
-      max-width: 177px;
-      padding: 8px 10px 8px 10px;
-    }
-  }
-}
+// .chat {
+//   background: #FFFFFF;
+//   width: 300px;
+//   height: 480px;
+//   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.35);
+//   position: fixed;
+//   z-index: 50;
+//   overflow: hidden;
+//   &__head {
+//     background: #F6F6F8;
+//     padding: 15px;
+//     border: #BCBCBE 1px solid;
+//   }
+//   &__title {
+//     color: #27253F;
+//     font-family: 'Lato', sans-serif;
+//     font-style: normal;
+//     font-weight: 700;
+//     font-size: 18px;
+//     line-height: 22px;
+//   }
+//   &__subtitle {
+//     font-family: 'Lato';
+//     font-style: normal;
+//     font-weight: 400;
+//     font-size: 12px;
+//     line-height: 14px;
+//     color: #6B6A6A;
+//   }
+//   &__message {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: flex-end;
+//     height: 80%;
+//     &-content {
+//       max-height: 0;
+//       animation: chat 5s forwards;
+//       @for $i from 1 through 5 {
+//         &:nth-child(#{$i}) {
+//           animation-delay: $i + 1s;
+//         }
+//       }
+//     }
+//     &-right {
+//       background: #2198F4;
+//       font-family: 'Lato';
+//       font-style: normal;
+//       font-weight: 400;
+//       font-size: 14px;
+//       line-height: 17px;
+//       color: #FFFFFF;
+//       padding: 8px 10px 8px 10px;
+//       margin: 0 15px 15px auto;
+//       max-width: 180px;
+//     }
+//     &-left {
+//       background: #E4E3E8;
+//       font-family: 'Lato';
+//       font-style: normal;
+//       font-weight: 400;
+//       font-size: 14px;
+//       line-height: 17px;
+//       color: #27253F;
+//       max-width: 177px;
+//       padding: 8px 10px 8px 10px;
+//     }
+//   }
+// }
 
 
-@keyframes animsvg {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+// @keyframes animsvg {
+//   0% {
+//     opacity: 1;
+//   }
+//   50% {
+//     opacity: 0.5;
+//   }
+//   100% {
+//     opacity: 1;
+//   }
+// }
 
-@keyframes chat {
-  0% {
-    max-height: 0%;
-  }
+// @keyframes chat {
+//   0% {
+//     max-height: 0%;
+//   }
 
-  100% {
-    max-height: 100%;
-  }
-}
+//   100% {
+//     max-height: 100%;
+//   }
+// }
 
 .banner {
   position: relative;
@@ -173,6 +173,9 @@
   background-repeat: no-repeat;
   background-color: #E0E7ED;
   padding: 143px 0 286px;
+  @media (max-width: 850px) {
+    padding-top: 57px;
+  }
   &__title {
     font-style: normal;
     font-weight: 900;
@@ -180,6 +183,13 @@
     line-height: 100%;
     color: #00559D;
     max-width: 765px;
+    // border-bottom: 1px solid black;
+    @media (max-width: 850px) {
+      font-size: 60px;
+    }
+    @media (max-width: 615px) {
+      font-size: 36px;
+    }
   }
 }
 
@@ -196,6 +206,10 @@
       flex-direction: column;
       max-width: 280px;
       row-gap: 20px;
+      @media screen and (max-width: 850px) {
+        max-width: 167px;
+        row-gap: 10px;
+      }
     }
     &-img {
       margin-bottom: 19px;
@@ -207,6 +221,11 @@
       line-height: 36px;
       color: #2C3036;
       max-width: 170px;
+      @media screen and (max-width: 850px) {
+        font-size: 22px;
+        max-width: 87px;
+        line-height: 26px;
+      }
     }
     &-desc {
       font-style: normal;
@@ -231,10 +250,14 @@
   display: flex;
   column-gap: 120px;
   position: relative;
+  @media screen and (max-width: 1180px) {
+    flex-wrap: wrap;
+  }
   &__list {
     display: flex;
     flex-direction: column;
     max-width: 480px;
+
     &-title {
       margin-bottom: 46px;
       max-width: 401px;
@@ -250,17 +273,17 @@
     max-width: 480px;
     margin-bottom: 20px;
   }
-  &::before {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 570px;
-    height: 477px;
-    right: -70px;
-    bottom: -60px;
-    background: #008752;
-    z-index: 5;
-  }
+  // &::before {
+  //   content: '';
+  //   position: absolute;
+  //   display: block;
+  //   width: 570px;
+  //   height: 477px;
+  //   right: -70px;
+  //   bottom: -60px;
+  //   background: #008752;
+  //   z-index: 5;
+  // }
   &__img {
     z-index: 15;
   }
@@ -271,5 +294,8 @@
   &__list {
     display: flex;
     column-gap: 46px;
+    @media screen and (max-width: 1180px) {
+      flex-wrap: wrap;
+    }
   }
 }
