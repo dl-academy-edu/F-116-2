@@ -1,0 +1,18 @@
+// тут пишешь стилизацию для конкретной страницы или блока
+.contact {
+    max-width: 543px;
+    background-color: #E1F0F7;
+    margin-left: 50px;
+    &__desc {
+        opacity: 0;
+        &:hover {
+            opacity: 1;
+        }
+        }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        padding: 0 30px;
+        margin-top: -20px; 
+}
+}

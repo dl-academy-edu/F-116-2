@@ -161,11 +161,13 @@
             @@include('blocks/link.html', { 'text': "Learn more", })
           </li>
         </ul>
-        <img
-          src="./img/cleaning.jpg"
-          class="about__img"
-          alt="Chem-Dry’s mission is helping people"
-        />
+        <picture>
+          <source srcset="./img/mobile.jpg, ./img/mobile-2x.jpg 2x" 
+                  media="(max-width: 375px)">
+          <source srcset="./img/tablet.jpg, ./img/tablet-2x.jpg 2x" 
+                  media="(max-width: 768px)">
+          <img srcset="./img/main.jpg , ./img/main-2x.jpg 2x" alt="">
+        </picture>
       </section>
       <section class="awards container">
         <h2 class="hidden">awards</h2>

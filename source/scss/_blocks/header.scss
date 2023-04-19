@@ -1,6 +1,5 @@
 .header {
     position: relative;
-    overflow: hidden;
     display: flex;
     align-items: center;
     margin-top: 33px;
@@ -33,19 +32,19 @@
             color: #95459A;
         }
         &-link--contact {
-            // position: absolute;
-            // top: 8%;
-            // right: -1010px;
+            position: absolute;
+            top: 8%;
+            right: -1010px;
             padding: 11px 40px;
             color: #FFFFFF;
             background: #008752;
             text-transform: uppercase;
             transition: 0.4s;
-            // transform: translate(-30px, 45px);
-            // animation: contact 10s infinite linear;
-            // &:hover {
-            //     opacity: 0.7;
-            // }
+            transform: translate(-30px, 45px);
+            animation: contact 10s infinite linear;
+            &:hover {
+                opacity: 0.7;
+            }
             @media screen and (max-width: 850px) {
                 display: none;
               }
@@ -53,18 +52,18 @@
     }
 }
 
-// @keyframes contact {
-//     0% {
-//         right: 1100px;
-//         rotate: (90deg);
-//         transform: translate(-100px, -205px);
-//     }
-//     100% {
-//         right: 10px;
-//         rotate: (180deg);
-//         transform: translate(-10px, -25px);
-//     }
-// }
+@keyframes contact {
+    0% {
+        right: 1100px;
+        rotate: (90deg);
+        transform: translate(-100px, -205px);
+    }
+    100% {
+        right: 10px;
+        rotate: (180deg);
+        transform: translate(-10px, -25px);
+    }
+}
 
 .logo{
     transition: 0.4s;
